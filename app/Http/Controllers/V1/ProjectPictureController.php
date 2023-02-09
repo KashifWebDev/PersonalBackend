@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\V1;
 
-use App\Models\ProjectTimeline;
-use App\Http\Requests\StoreProjectTimelineRequest;
-use App\Http\Requests\UpdateProjectTimelineRequest;
+use App\Http\Requests\StoreProjectPictureRequest;
+use App\Http\Requests\UpdateProjectPictureRequest;
+use App\Models\ProjectPicture;
 
-class ProjectTimelineController extends Controller
+class ProjectPictureController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class ProjectTimelineController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreProjectTimelineRequest  $request
+     * @param  \App\Http\Requests\StoreProjectPictureRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreProjectTimelineRequest $request)
+    public function store(StoreProjectPictureRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class ProjectTimelineController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProjectTimeline  $projectTimeline
+     * @param  \App\Models\ProjectPicture  $projectPicture
      * @return \Illuminate\Http\Response
      */
-    public function show(ProjectTimeline $projectTimeline)
+    public function show(ProjectPicture $projectPicture)
     {
         //
     }
@@ -53,10 +53,10 @@ class ProjectTimelineController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ProjectTimeline  $projectTimeline
+     * @param  \App\Models\ProjectPicture  $projectPicture
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProjectTimeline $projectTimeline)
+    public function edit(ProjectPicture $projectPicture)
     {
         //
     }
@@ -64,11 +64,11 @@ class ProjectTimelineController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateProjectTimelineRequest  $request
-     * @param  \App\Models\ProjectTimeline  $projectTimeline
+     * @param  \App\Http\Requests\UpdateProjectPictureRequest  $request
+     * @param  \App\Models\ProjectPicture  $projectPicture
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProjectTimelineRequest $request, ProjectTimeline $projectTimeline)
+    public function update(UpdateProjectPictureRequest $request, ProjectPicture $projectPicture)
     {
         //
     }
@@ -76,10 +76,10 @@ class ProjectTimelineController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ProjectTimeline  $projectTimeline
+     * @param  \App\Models\ProjectPicture  $projectPicture
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProjectTimeline $projectTimeline)
+    public function destroy(ProjectPicture $projectPicture)
     {
         //
     }

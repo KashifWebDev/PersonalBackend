@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\V1;
 
-use App\Models\ProjectTimelineRow;
-use App\Http\Requests\StoreProjectTimelineRowRequest;
-use App\Http\Requests\UpdateProjectTimelineRowRequest;
+use App\Http\Requests\StoreQuoteRowsRequest;
+use App\Http\Requests\UpdateQuoteRowsRequest;
+use App\Models\QuoteRows;
 
-class ProjectTimelineRowController extends Controller
+class QuoteRowsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class ProjectTimelineRowController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreProjectTimelineRowRequest  $request
+     * @param  \App\Http\Requests\StoreQuoteRowsRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreProjectTimelineRowRequest $request)
+    public function store(StoreQuoteRowsRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class ProjectTimelineRowController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProjectTimelineRow  $projectTimelineRow
+     * @param  \App\Models\QuoteRows  $quoteRows
      * @return \Illuminate\Http\Response
      */
-    public function show(ProjectTimelineRow $projectTimelineRow)
+    public function show(QuoteRows $quoteRows)
     {
         //
     }
@@ -53,10 +53,10 @@ class ProjectTimelineRowController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ProjectTimelineRow  $projectTimelineRow
+     * @param  \App\Models\QuoteRows  $quoteRows
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProjectTimelineRow $projectTimelineRow)
+    public function edit(QuoteRows $quoteRows)
     {
         //
     }
@@ -64,11 +64,11 @@ class ProjectTimelineRowController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateProjectTimelineRowRequest  $request
-     * @param  \App\Models\ProjectTimelineRow  $projectTimelineRow
+     * @param  \App\Http\Requests\UpdateQuoteRowsRequest  $request
+     * @param  \App\Models\QuoteRows  $quoteRows
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProjectTimelineRowRequest $request, ProjectTimelineRow $projectTimelineRow)
+    public function update(UpdateQuoteRowsRequest $request, QuoteRows $quoteRows)
     {
         //
     }
@@ -76,10 +76,10 @@ class ProjectTimelineRowController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ProjectTimelineRow  $projectTimelineRow
+     * @param  \App\Models\QuoteRows  $quoteRows
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProjectTimelineRow $projectTimelineRow)
+    public function destroy(QuoteRows $quoteRows)
     {
         //
     }

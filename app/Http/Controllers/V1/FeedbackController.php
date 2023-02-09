@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\V1;
 
-use App\Models\QuoteRows;
-use App\Http\Requests\StoreQuoteRowsRequest;
-use App\Http\Requests\UpdateQuoteRowsRequest;
+use App\Http\Requests\StoreFeedbackRequest;
+use App\Http\Requests\UpdateFeedbackRequest;
+use App\Models\Feedback;
 
-class QuoteRowsController extends Controller
+class FeedbackController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class QuoteRowsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreQuoteRowsRequest  $request
+     * @param  \App\Http\Requests\StoreFeedbackRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreQuoteRowsRequest $request)
+    public function store(StoreFeedbackRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class QuoteRowsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\QuoteRows  $quoteRows
+     * @param  \App\Models\Feedback  $feedback
      * @return \Illuminate\Http\Response
      */
-    public function show(QuoteRows $quoteRows)
+    public function show(Feedback $feedback)
     {
         //
     }
@@ -53,10 +53,10 @@ class QuoteRowsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\QuoteRows  $quoteRows
+     * @param  \App\Models\Feedback  $feedback
      * @return \Illuminate\Http\Response
      */
-    public function edit(QuoteRows $quoteRows)
+    public function edit(Feedback $feedback)
     {
         //
     }
@@ -64,11 +64,11 @@ class QuoteRowsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateQuoteRowsRequest  $request
-     * @param  \App\Models\QuoteRows  $quoteRows
+     * @param  \App\Http\Requests\UpdateFeedbackRequest  $request
+     * @param  \App\Models\Feedback  $feedback
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateQuoteRowsRequest $request, QuoteRows $quoteRows)
+    public function update(UpdateFeedbackRequest $request, Feedback $feedback)
     {
         //
     }
@@ -76,10 +76,10 @@ class QuoteRowsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\QuoteRows  $quoteRows
+     * @param  \App\Models\Feedback  $feedback
      * @return \Illuminate\Http\Response
      */
-    public function destroy(QuoteRows $quoteRows)
+    public function destroy(Feedback $feedback)
     {
         //
     }

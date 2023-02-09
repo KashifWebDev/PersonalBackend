@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\V1;
 
-use App\Models\Feedback;
-use App\Http\Requests\StoreFeedbackRequest;
-use App\Http\Requests\UpdateFeedbackRequest;
+use App\Http\Requests\StoreProjectTimelineRequest;
+use App\Http\Requests\UpdateProjectTimelineRequest;
+use App\Models\ProjectTimeline;
 
-class FeedbackController extends Controller
+class ProjectTimelineController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class FeedbackController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreFeedbackRequest  $request
+     * @param  \App\Http\Requests\StoreProjectTimelineRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreFeedbackRequest $request)
+    public function store(StoreProjectTimelineRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class FeedbackController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Feedback  $feedback
+     * @param  \App\Models\ProjectTimeline  $projectTimeline
      * @return \Illuminate\Http\Response
      */
-    public function show(Feedback $feedback)
+    public function show(ProjectTimeline $projectTimeline)
     {
         //
     }
@@ -53,10 +53,10 @@ class FeedbackController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Feedback  $feedback
+     * @param  \App\Models\ProjectTimeline  $projectTimeline
      * @return \Illuminate\Http\Response
      */
-    public function edit(Feedback $feedback)
+    public function edit(ProjectTimeline $projectTimeline)
     {
         //
     }
@@ -64,11 +64,11 @@ class FeedbackController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateFeedbackRequest  $request
-     * @param  \App\Models\Feedback  $feedback
+     * @param  \App\Http\Requests\UpdateProjectTimelineRequest  $request
+     * @param  \App\Models\ProjectTimeline  $projectTimeline
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateFeedbackRequest $request, Feedback $feedback)
+    public function update(UpdateProjectTimelineRequest $request, ProjectTimeline $projectTimeline)
     {
         //
     }
@@ -76,10 +76,10 @@ class FeedbackController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Feedback  $feedback
+     * @param  \App\Models\ProjectTimeline  $projectTimeline
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Feedback $feedback)
+    public function destroy(ProjectTimeline $projectTimeline)
     {
         //
     }

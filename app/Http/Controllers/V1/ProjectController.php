@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\V1;
 
-use App\Models\ProjectPicture;
-use App\Http\Requests\StoreProjectPictureRequest;
-use App\Http\Requests\UpdateProjectPictureRequest;
+use App\Http\Requests\StoreProjectRequest;
+use App\Http\Requests\UpdateProjectRequest;
+use App\Models\Project;
 
-class ProjectPictureController extends Controller
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class ProjectPictureController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreProjectPictureRequest  $request
+     * @param  \App\Http\Requests\StoreProjectRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreProjectPictureRequest $request)
+    public function store(StoreProjectRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class ProjectPictureController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ProjectPicture  $projectPicture
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(ProjectPicture $projectPicture)
+    public function show(Project $project)
     {
         //
     }
@@ -53,10 +53,10 @@ class ProjectPictureController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ProjectPicture  $projectPicture
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function edit(ProjectPicture $projectPicture)
+    public function edit(Project $project)
     {
         //
     }
@@ -64,11 +64,11 @@ class ProjectPictureController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateProjectPictureRequest  $request
-     * @param  \App\Models\ProjectPicture  $projectPicture
+     * @param  \App\Http\Requests\UpdateProjectRequest  $request
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProjectPictureRequest $request, ProjectPicture $projectPicture)
+    public function update(UpdateProjectRequest $request, Project $project)
     {
         //
     }
@@ -76,10 +76,10 @@ class ProjectPictureController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ProjectPicture  $projectPicture
+     * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProjectPicture $projectPicture)
+    public function destroy(Project $project)
     {
         //
     }

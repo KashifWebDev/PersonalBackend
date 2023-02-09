@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\V1;
 
-use App\Models\Quote;
-use App\Http\Requests\StoreQuoteRequest;
-use App\Http\Requests\UpdateQuoteRequest;
+use App\Http\Requests\StoreClientRequest;
+use App\Http\Requests\UpdateClientRequest;
+use App\Models\Client;
 
-class QuoteController extends Controller
+class ClientController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class QuoteController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreQuoteRequest  $request
+     * @param  \App\Http\Requests\StoreClientRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreQuoteRequest $request)
+    public function store(StoreClientRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class QuoteController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Quote  $quote
+     * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function show(Quote $quote)
+    public function show(Client $client)
     {
         //
     }
@@ -53,10 +53,10 @@ class QuoteController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Quote  $quote
+     * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function edit(Quote $quote)
+    public function edit(Client $client)
     {
         //
     }
@@ -64,11 +64,11 @@ class QuoteController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateQuoteRequest  $request
-     * @param  \App\Models\Quote  $quote
+     * @param  \App\Http\Requests\UpdateClientRequest  $request
+     * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateQuoteRequest $request, Quote $quote)
+    public function update(UpdateClientRequest $request, Client $client)
     {
         //
     }
@@ -76,10 +76,10 @@ class QuoteController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Quote  $quote
+     * @param  \App\Models\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Quote $quote)
+    public function destroy(Client $client)
     {
         //
     }
